@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="font-[Poppins] w-96">
+    <div class="p-10">
+      <h1 class="text-xl text-bold">Youtube Transcript Summariser</h1>
+
+      <div class="pt-4" id="link"></div>
+
+      <br />
+      <div class="">
+        <button
+          class="bg-red-500 shadow px-4 py-2 rounded text-lg text-bold
+          text-white mb-4"
+          id="summarise"
+          type="button">
+          Summarise
+        </button>
+        <button
+          class="bg-red-500 shadow px-4 py-2 rounded text-lg text-bold
+          text-white mb-4"
+          id="play"
+          type="button">
+          Play
+        </button>
+        <button
+          class="shadow px-4 py-2 rounded text-lg text-bold mb-4 border-2
+          border-red-500"
+          id="translate"
+          type="button">
+          Translate
+        </button>
+      </div>
+      <label for="countries" class="block mb-2 text-sm font-medium text-gray-900
+        dark:text-white">Select an option</label>
+      <select id="lang" value="en" class="bg-gray-50 border border-gray-300
+        text-gray-900 text-sm rounded-lg focus:ring-blue-500
+        focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700
+        dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+        dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <option selected>Choose language</option>
+        <option value="mr">Marathi</option>
+        <option value="hi">Hindi</option>
+        <option value="DE">German</option>
+        <option value="fr">French</option>
+        <option value="zh">Chinese</option>
+      </select>
+
+      <br />
+      <p id="output">
+      </p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
